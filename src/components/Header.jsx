@@ -1,10 +1,10 @@
 import  { useState } from 'react';
-
+import { Link, useLocation } from "react-router-dom";
 
 const navList = [
-    { id: 'Baidanh', label: 'Bài đánh'},
-    { id: 'Baituong', label: 'Bài tướng'},
-    { id: 'Luatchoi', label: 'Luật chơi'}
+    { to: "/", id: 'Baidanh', label: 'Bài đánh'},
+    { to: "/Baituong", id: 'Baituong', label: 'Bài tướng'},
+    { to: "/Luatchoi", id: 'Luatchoi', label: 'Luật chơi'}
 ]
 
 const Header = ({ activeSection, setActiveSection }) => {
@@ -19,7 +19,8 @@ const Header = ({ activeSection, setActiveSection }) => {
         <div className="container mx-auto py-4 px-4">
             <nav className="justify-center gap-50 hidden md:flex">
                 {navList.map((link) => (
-                    <button 
+                    <Link
+                    to={link.to}
                     key={link.id}
                     onClick={() => setActiveSection(link.id)} 
                     className={`cursor-pointer border rounded 
@@ -28,7 +29,7 @@ const Header = ({ activeSection, setActiveSection }) => {
                     activeSection === link.id ? ' text-blue-500' : ''
                     }`}>
                         {link.label}
-                    </button>
+                    </Link>
                 ))}
             </nav>
             <div className="md:hidden text-right">
@@ -43,10 +44,13 @@ const Header = ({ activeSection, setActiveSection }) => {
         <div className='md:hidden fixed inset-0 my-14 bg-white border-t border-gray-200
         shadow-md px-4 py-4 space-y-3 font-medium h-screen'>
             {navList.map((link) => (
-                <a href={link.href} key={link.href} className='block hover:text-sky-600 transition border p-2 rounded-lg'
+                <Link 
+                to={link.to}
+                href={link.href} key={link.href} 
+                className='block hover:text-sky-600 transition border p-2 rounded-lg'
                 onClick={() => handleClick(link.id)}>
                     {link.label}
-                </a>
+                </Link>
             ))}
         </div>
     )}

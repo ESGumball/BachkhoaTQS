@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DATA from "./Dataluat";
+import DATA from "../Dataluat";
 
 const Luatchoi = () => {
     const [open, setOpen] = useState(false);

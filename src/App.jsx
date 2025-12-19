@@ -1,22 +1,21 @@
-import Baidanh from "./components/Baidanh"
-import Baituong from "./components/Baituong"
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Baidanh from "./components/pages/Baidanh"
+import Baituong from "./components/pages/Baituong"
 import Header from "./components/Header"
-import { useState } from "react";
-import Luatchoi from "./components/Luatchoi";
+import Luatchoi from "./components/pages/Luatchoi";
 
 const App = () => {
-  const [activeSection, setActiveSection] = useState("Baidanh");
   
   return (
     <div>
-      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
-
-      <div>
-        {activeSection === "Baidanh" && <Baidanh />}
-        {activeSection === "Baituong" && <Baituong />}
-        {activeSection === "Luatchoi" && <Luatchoi />}
-      </div>
-
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Baidanh />} />
+          <Route path="/Baituong" element={<Baituong />} />
+          <Route path="/Luatchoi" element={<Luatchoi />} />
+        </Routes>
+      </Router>
     </div>
   );
 };

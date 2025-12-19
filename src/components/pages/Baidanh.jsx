@@ -1,4 +1,4 @@
-import cardList from "./cardList"
+import cardList from "../cardList"
 import { useState } from "react";
 
 const sort = [

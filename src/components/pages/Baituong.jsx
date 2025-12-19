@@ -1,4 +1,4 @@
-import cardTuong from './cardTuong';
+import cardTuong from '../cardTuong';
 import { useState } from "react";
 
 
