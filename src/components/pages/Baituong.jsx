@@ -60,10 +60,13 @@ const Baituong = () => {
                 card.name.toLowerCase().includes(searchText.toLowerCase())
                 )
                 .map((card,index) => (
+                    <div className="flex flex-col">
                     <img key={index} src={card.image} alt={card.name}
                     className="rounded-lg w-full aspect-2/3 object-cover 
                     hover:scale-110 transition-transform duration-200 cursor-pointer"
                     onClick={() => setSelectedImage(card)}></img>
+                    <span className="text-sm text-center font-bold"> [{card.name}] </span>
+                    </div>
                 ))}
             </div>
         </div>

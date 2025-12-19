@@ -55,10 +55,15 @@ const Baidanh = () => {
                 card.name.toLowerCase().includes(searchText.toLowerCase())
                 ) 
                 .map((card,index) => (
-                    <img key={index} src={card.image} 
-                    className="border rounded-lg hover:bg-white cursor-pointer
-                    hover:scale-110 transition-transform duration-200 w-full aspect-2/3 object-cover"
-                    onClick={() => setSelectedImage(card)}></img>
+                    <div className="flex flex-col">
+                      <img 
+                      key={index} src={card.image} 
+                      className="border rounded-lg hover:bg-white cursor-pointer
+                      hover:scale-110 transition-transform duration-200 w-full aspect-2/3 object-cover"
+                      onClick={() => setSelectedImage(card)}>
+                      </img>
+                      <span className="text-sm text-center font-bold"> [{card.name}] </span>
+                    </div>
                 ))}
             </div>
         </div>
