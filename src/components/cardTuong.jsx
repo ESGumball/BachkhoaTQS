@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faUserGroup } from '@fortawesome/free-solid-svg-icons';
-
+import vidu from '../assets/Baidanh/vidu.jpg';
 
 const cardTuong = [
     {
         tennuoc: 'Thục',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Loạn Thế Đích Kiêu Hùng',
         name: 'Lưu Bị',
         haotuong: (
@@ -28,7 +28,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngụy',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Kinh Hành Hợp Nhất',
         name: 'Vương Cơ',
         haotuong: '---',
@@ -57,7 +57,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Quần',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Xí Diễm Lưu Kim',
         name: 'Lữ Linh Kì',
         haotuong: '---',
@@ -91,7 +91,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngô',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Quan Quân Tướng Quân',
         name: 'Đào Hoàng',
         haotuong: '---',
@@ -119,7 +119,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngụy',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Tào Ngụy Đích Mưu Chủ',
         name: 'Tuân Du',
         haotuong: (
@@ -149,7 +149,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Quần',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Trì Sính Tây Thùy',
         name: 'Mã Đằng',
         haotuong: '---',
@@ -176,7 +176,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngô',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Kình Thiên Chi Trụ',
         name: 'Lục Tốn',
         haotuong: (
@@ -204,7 +204,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Dã tâm',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Giáo Hoạt Đích Đầu Cơ Giả',
         name: 'Công Tôn Uyên',
         haotuong: '---',
@@ -234,7 +234,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngô',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Đốc Liệt Chi Sĩ',
         name: 'Thái Sử Từ',
         haotuong: (
@@ -263,7 +263,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Quần',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Lãnh Khốc Đích Độc Sĩ',
         name: 'Giả Hủ',
         haotuong: (
@@ -296,7 +296,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngụy',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Đại Tướng Quân',
         name: 'Tào Nhân',
         haotuong: (
@@ -321,7 +321,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Thục',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Thục Hán Đích Phụ Dục',
         name: 'Pháp Chính',
         haotuong: (
@@ -352,7 +352,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Dã tâm',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Trào Phong Khai Thiên',
         name: 'Tư Mã Chiêu',
         haotuong: (
@@ -385,7 +385,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngô',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Dương Võ Tướng Quân',
         name: 'Ngô Cảnh',
         haotuong: (
@@ -415,7 +415,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngụy',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Thiên Tư Đích Minh Quân',
         name: 'Tào Duệ',
         haotuong: (
@@ -446,7 +446,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Quần',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Quý Ảnh Thần Đạo',
         name: 'Tả Từ',
         haotuong: (
@@ -478,7 +478,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Quần',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Trọng Gia Đích Chủ Tướng',
         name: 'Kỷ Linh',
         haotuong: (
@@ -504,7 +504,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngô',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Tín Trọng Tô Võ',
         name: 'Phùng Hy',
         haotuong: (
@@ -538,7 +538,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Ngụy',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Đặc Tài Phóng Khoáng',
         name: 'Dương Tu',
         haotuong: (
@@ -567,7 +567,7 @@ const cardTuong = [
     },
     {
         tennuoc: 'Thục',
-        image: '/src/assets/Baidanh/vidu.jpg',
+        image: vidu,
         Danhhieu: 'Giáo Thu Huyên Phiên',
         name: 'Hướng Lãng',
         haotuong: (
