@@ -233,7 +233,7 @@ const cardList = [
     },
     {
         type: 'Cẩm nang',
-        image: viduvidu,
+        image: vidu,
         name: 'Hỏa Thiêu Liên Doanh',
         chucnang: 'Sử dụng lên người bên phải, bạn gây 1 sát thương hỏa cho người đó. Nếu người đó có quan hệ đội hình\
         sát thương này sẽ lan tới những người cùng thế lực với người đó',

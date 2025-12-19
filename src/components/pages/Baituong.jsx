@@ -39,12 +39,16 @@ const Baituong = () => {
             </div>
             <div className="flex flex-wrap gap-4 md:gap-10">
                 {sort.map((card, index) => (
-                    <button key={index} className="border rounded p-2 cursor-pointer hover:bg-white
-                    hover:scale-110 transition-transform duration-200"
+                    <button key={index} 
+                    className={`border rounded p-2 hover:bg-white cursor-pointer
+                    hover:scale-110 transition-transform duration-200
+                    ${filterType === card.tennuoc ? "bg-white text-black" : "bg-transparent text-white"}`}
                     onClick={() => setFilterType(card.tennuoc)}> {card.tennuoc} </button>
                 ))}
                 <button
-                className="border rounded p-2 cursor-pointer hover:bg-white hover:scale-110 transition-transform duration-200"
+                className={`border rounded p-2 hover:bg-white cursor-pointer
+                    hover:scale-110 transition-transform duration-200
+                    ${filterType === null ? "bg-white text-black" : "bg-transparent text-white"}`}
                 onClick={() => setFilterType(null)}
                 >
                     Tất cả

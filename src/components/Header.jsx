@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 
 const navList = [
@@ -7,12 +7,9 @@ const navList = [
     { to: "/Luatchoi", id: 'Luatchoi', label: 'Luật chơi'}
 ]
 
-const Header = ({ activeSection, setActiveSection }) => {
+const Header = () => {
+    const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const handleClick = (id) => {
-        setActiveSection(id);    // chuyển section
-        setIsMenuOpen(false);    // đóng menu mobile
-    };
   return (
     <>
     <header className="bg-linear-to-r from-[#00334d] to-cyan-600 shadow-md top-0 z-50 sticky">
@@ -22,18 +19,19 @@ const Header = ({ activeSection, setActiveSection }) => {
                     <Link
                     to={link.to}
                     key={link.id}
-                    onClick={() => setActiveSection(link.id)} 
                     className={`cursor-pointer border rounded 
                     hover:scale-110 transition-transform duration-200 
                     p-3 text-white hover:bg-blue-200 hover:text-black ${
-                    activeSection === link.id ? ' text-blue-500' : ''
-                    }`}>
+                    location.pathname === link.to ? ' text-blue-500' : ''
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}>
                         {link.label}
                     </Link>
                 ))}
             </nav>
             <div className="md:hidden text-right">
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <button 
+                onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? <div className="text-white"> Close </div> : 
                     <div className='text-white'> Menu </div>}
                 </button>
@@ -46,9 +44,9 @@ const Header = ({ activeSection, setActiveSection }) => {
             {navList.map((link) => (
                 <Link 
                 to={link.to}
-                href={link.href} key={link.href} 
+                key={link.href} 
                 className='block hover:text-sky-600 transition border p-2 rounded-lg'
-                onClick={() => handleClick(link.id)}>
+                onClick={() => setIsMenuOpen(false)}>
                     {link.label}
                 </Link>
             ))}

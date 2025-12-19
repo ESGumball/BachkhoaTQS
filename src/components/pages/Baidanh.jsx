@@ -33,26 +33,31 @@ const Baidanh = () => {
             </div>
             <div className="flex md:gap-10 gap-8">
                 {sort.map((card,index) => (
-                    <button key={index} className="border rounded p-2 hover:bg-white cursor-pointer
+                    <button key={index} 
+                    className={`border rounded p-2 hover:bg-white cursor-pointer
                     hover:scale-110 transition-transform duration-200
-                    " onClick={() => setFilterType(card.type)}> {card.type} </button>
+                    ${filterType === card.type ? "bg-white text-black" : "bg-transparent text-white"}`} 
+                    onClick={() => setFilterType(card.type)}> {card.type} </button>
                 ))}
                 <button
-                className="border rounded p-2 hover:bg-white cursor-pointer hover:scale-110 
-                transition-transform duration-200"
+                className={`border rounded p-2 hover:bg-white cursor-pointer
+                    hover:scale-110 transition-transform duration-200
+                    ${filterType === null ? "bg-white text-black" : "bg-transparent text-white"}`}
                 onClick={() => setFilterType(null)}
                 >
                     Tất cả
                 </button>
             </div>
-            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-5">
+            <div 
+            className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-5">
                 {cardList
                 .filter(card => (!filterType || card.type === filterType) && 
                 card.name.toLowerCase().includes(searchText.toLowerCase())
                 ) 
                 .map((card,index) => (
-                    <img key={index} src={card.image} className="rounded-lg w-full aspect-2/3 object-cover 
-                    cursor-pointer hover:scale-110 transition-transform duration-200"
+                    <img key={index} src={card.image} 
+                    className="border rounded-lg hover:bg-white cursor-pointer
+                    hover:scale-110 transition-transform duration-200 w-full aspect-2/3 object-cover"
                     onClick={() => setSelectedImage(card)}></img>
                 ))}
             </div>
