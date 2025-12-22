@@ -39,7 +39,7 @@ const cardList = [
     },
     {
         type: 'Cơ bản',
-        image: ImageList.vidu,
+        image: ImageList.ThichSat,
         name: 'Thích Sát',
         chucnang: 'Khi người chơi dùng thẻ [Né] để triệt tiêu lá Thích Sát họ phải bỏ thêm 1 lá bài trên tay, nếu không\
         thẻ Thích Sát này vẫn gây ra sát thương',
@@ -59,7 +59,7 @@ const cardList = [
     },
     {
         type: 'Cơ bản',
-        image: ImageList.vidu,
+        image: ImageList.Ne,
         name: 'Né',
         chucnang: 'Dùng để triệu tiêu lá [Sát]',
     },
@@ -173,7 +173,7 @@ const cardList = [
     },
     {
         type: 'Cơ bản',
-        image: ImageList.vidu,
+        image: ImageList.Dao,
         name: 'Đào',
         chucnang: 'Dùng để hồi phục 1 sinh lực hoặc thoát khỏi trạng thái hấp hối. Có thể dùng lên người đang trong\
         trạng thái hấp hối',
@@ -200,14 +200,14 @@ const cardList = [
     },
     {
         type: 'Cơ bản',
-        image: ImageList.vidu,
+        image: ImageList.Tuu,
         name: 'Tửu',
         chucnang: 'Khi sử dụng, lá [Sát] tiếp theo được +1 sát thương. Có thẻ dùng để thoát khỏi trạng\
         thái hấp hối, không được sử dụng cho người khác',
     },
     {
         type: 'Cơ bản',
-        image:ImageList.vidu,
+        image:ImageList.SatBang,
         name: 'Sát Băng',
         chucnang: 'Đây là lá [Sát] có thuộc tính băng. Khi sử dụng Sát băng gây sát thương cho mục tiêu\
         bạn có thể chặn sát thương này lại để bỏ 2 thẻ bài của người chơi',
@@ -240,7 +240,7 @@ const cardList = [
     },
     {
         type: 'Cơ bản',
-        image: ImageList.vidu,
+        image: ImageList.SatHoa,
         name: 'Sát hỏa',
         chucnang: 'Đây là lá [Sát] có thuộc tính Hỏa',
     },
@@ -271,7 +271,7 @@ const cardList = [
     },
     {
         type: 'Cơ bản',
-        image: ImageList.vidu,
+        image: ImageList.Doc,
         name: 'Độc',
         chucnang: (
             <>
