@@ -105,7 +105,7 @@ const cardList = [
     },
     {
         type: 'Cơ bản',
-        image: ImageList.vidu,
+        image: ImageList.SatLoi,
         name: 'Sát lôi',
         chucnang: 'Là thẻ [Sát] nhưng có thuộc tính lôi',
     },
@@ -148,7 +148,7 @@ const cardList = [
     },
     {
         type: 'Cẩm nang',
-        image: ImageList.vidu,
+        image: ImageList.HoPhong,
         name: 'Hô Phong Hoán Vũ',
         chucnang: 'Sử dụng lên 1 người không cùng thế lực, bạn lật mở 3 thẻ trên đầu chồng bài, bạn thu lấy 1 thẻ và\
         cho họ 1 thẻ, thẻ còn lại đặt xuống đáy',

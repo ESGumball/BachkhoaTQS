@@ -9,6 +9,9 @@ const ImageList = {
     Tuu: './assets/Baidanh/Tuu.png',
     SatHoa: './assets/Baidanh/SatHoa.png',
     ThichSat: './assets/Baidanh/ThichSat.png',
+    SatLoi: './assets/Baidanh/SatLoi.png',
+    HoPhong: './assets/Baidanh/HoPhong.png',
+    VienGiao: './assets/Baidanh/VienGiao.png',
 };
 
 export default ImageList;
